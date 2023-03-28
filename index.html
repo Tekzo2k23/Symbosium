@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+    
+    .logo1{
+        width:130px;
+        height:65px;
+    }
+    .logo2{
+        width:60px;
+        height:60px;
+    }
+    .hero{
+    /* background-color: #ffd801; */
+    background-image: url("bgg");
+    background-position: center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    /* position: fixed; */
+    height: 500px;
+    z-index: 2;
+    }
+
+    .title{
+      font-family: 'Roboto Mono', monospace;
+    }
+    .bdy3{
+      padding-top: 30px;
+      padding-bottom: 50px;
+    }
+    .imgs{
+      border-radius: 25px;
+    }
+    .txt2{
+      color:white;
+      text-align: center;
+    }
+    body{
+      background-color: #006d5b;
+    }
+    .navbar{
+      background-color: black;
+    }
+    .card{
+      background-color: black;
+    }
+
+    .glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    background: #000;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000;
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+.btm{
+  background-image: url(wave-haikei.svg);
+  background-size: cover;
+  height: 400px;
+  transform: rotate(180deg);
+}
+</style>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-transparent">
+    <div class="container-fluid">
+      <!-- Centered logo -->
+      
+      <a class="navbar-brand mx-auto" href="index.html"><img src="logo2.jpg" class="logo2" alt=""><img src="LogoMakerCa-1677775666807 (1).png" class="logo1" alt=""></a>
+  
+      <!-- Navbar toggle button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Navbar items -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item ms-3">
+            <a class="nav-link active title" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown ms-3">
+            <a class="nav-link dropdown-toggle active title" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Event
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item title" href="tech_event.html">Technical</a></li>
+              <li><a class="dropdown-item title" href="non_tech.html">Non Technical</a></li>
+              
+            </ul>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link active title" href="contact.html">ContactUs</a>
+          </li>
+          <li class="nav-item ms-4">
+            <a class="btn btn-primary bg-white text-dark" href="#">Register</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- <div class="bd"> -->
+    <div class="hero d-flex align-items-center" id="home">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-7 mx-auto text-center">
+                  <h1 class="display-4 text-white"><b>BETHLAHEM INSTITUTE OF ENGINEERING</b></h1>
+                  <br><br><br><br>
+                  <h1 class="display-4 my-2"><b>DEPARTMENT OF CSE & IT</b></h1>
+                  <h1>TEKZO-2K23
+
+                  </h1>
+                  
+
+                </div>
+          </div>
+          
+      </div>
+  </div>
+  <div class="container bdy3">
+    <div id="carouselExampleIndicators" class="carousel slide imgs" data-bs-ride="carousel">
+        <div class="carousel-indicators imgs">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="corosel_img/1.JPG" class="d-block w-100 imgs" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="corosel_img/2.JPG" class="d-block w-100 imgs" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="corosel_img/3.JPG" class="d-block w-100 imgs" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="corosel_img/4.JPG" class="d-block w-100 imgs" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="corosel_img/5.JPG" class="d-block w-100 imgs" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+  
+    <div class="container bdy5">
+
+      <div class="row">
+        <div class="col my-5 d-flex flex-column">
+          <div class="card mb-3 shadow-lg bg-body-tertiary rounded" data-aos="zoom-in">
+            <img src="sym_logo2.jpg" class="card-img-top itimg" alt="...">
+            <div class="card-body text-white ">
+              <h5 class="card-title h2">TEKZO-2K23</h5>
+              <p class="card-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A college symposium is a special type of academic gathering that typically involves multiple presentations or discussions on a particular subject, issue or theme, usually held on the campus of a college or university. These events bring together students, professors, and experts from different disciplines to exchange ideas, share knowledge, and showcase research findings.
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;College symposia can take many forms, ranging from formal lectures and presentations to informal panel discussions and roundtable conversations. The goal is to foster a lively and engaging exchange of ideas, often resulting in new insights and perspectives on the topic at hand. Students and faculty members alike can benefit from these events, as they offer an opportunity to learn from leading experts in their field, network with colleagues, and expand their understanding of complex topics. Overall, college symposia are an important part of academic life, providing a platform for intellectual engagement and discovery.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col my-3 d-flex flex-column">
+          <div class="card mb-3 text-white shadow-lg" data-aos="zoom-in">
+            <img src="about_img/slide1.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-white">
+              <h5 class="card-title h2">Bethlahem Institute of Engineering</h5>
+              <p class="card-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bethlahem Institute of Engineering (BIoE) is affiliated to Anna University Chennai and approved by All India Council for Technical Education (AICTE), New Delhi. This Institution was established in the year 2008 with a vision to provide focused technical education to empower budding technocrats with technical and entrepreneurial skills so as to become globally competent. The Institution intends to provide academic and career opportunities to all sectors of the society especially the socially and economically deprived younger generations of the societyThe Institution is managed by the Nesamony Memorial Trust and Shri. Gerald Selvaraja, a great visionary and renowned entrepreneur in the US is the Founder cum Chairman. The Trust started its academic journey with Bethlahem Matriculation School in the year 2002 and gradually added five more Institutions viz. Bethlahem College of Education (2006),Bethlahem Institute of Engineering (2008), Bethlahem Hillside International School (2017),Bethlehem New Central School (2018), Bethlahem College of Arts and Science (2019).<br><br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Institution is well known for its Technical Excellence, modern facilities and Eco-friendly campus which is conducive for the all-round development of learners. The campus provides an ideal ambience for young minds to explore the unexplored, stimulate creativity and independent thinking. Its adherence to high academic standards, strict internal evaluation, state-of-the-art infrastructure, technically qualified faculty and exciting opportunities offered, make it a destination for Engineering aspirants..</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      
+      <div class="row">
+        <div class="col my-5 d-flex flex-column">
+          <div class="card mb-3 shadow-lg bg-body-tertiary rounded" data-aos="zoom-in">
+            <img src="about_img/code1 (3).jpg" class="card-img-top itimg" alt="...">
+            <div class="card-body text-white">
+              <h5 class="card-title h2">CSE & IT Department</h5>
+              <p class="card-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Department of Computer Science and Engineering at Bethlahem Institute of Engineering was started in the year 2008. The department has a unique team of teaching fraternity and facilities that offer students a platform to strengthen their skills. The department offers an impressive atmosphere for academic and research so as to make them globally competent in the current technical scenario.
+                <br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The department of Information Technology aims at moulding the young technocrats into Information Technology professionals. The IT sector is growing rapidly so as the job opportunities during this Digital era. The students are offered with deep theoretical and practical learning, for the perfect blend of technical and managerial skills.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- </div> -->
+  <div class="container py-3">
+    <div class="row justify-content-center">
+      <div class="col col-lg-6">
+        <div class="card text-center border border-5 rounded-pill date-col bg-white" data-aos="zoom-in">
+          
+          <div class="card-body">
+            <!-- <h5 class="card-title">Date</h5> -->
+            <h2 class="text-center"><span class="badge bg-white text-dark"><img src="date2.gif" class="icn color-light" alt=""> Date:14-04-2023</span></h2>
+            <h2 class="text-center"><span class="badge bg-white text-dark"><img src="rupee2.png" class="icn color-light" alt="">&nbsp;200 /per person</span></h2>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSet10nspzyLm1nigycv5tBnQn-xBoEhJx8F_XhZJRZ9axOgOA/viewform?usp=sf_link" target="_blank" class="btn btn-primary glow-on-hover pt-3">Register Now</a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+
+  <footer class="bg-dark text-light py-3">
+    <div class="container">
+      <p class="text-center my-3">" The more you learn, the more you earn "</p>
+    </div>
+  </footer>
+      
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+      <script>
+          AOS.init();
+      </script>
+</body>
+</html>
